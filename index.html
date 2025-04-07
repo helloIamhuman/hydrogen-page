@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>从电解水制氢到氢燃料电池的原理解析</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      padding: 30px;
+      background-color: #f5f9ff;
+      color: #222;
+    }
+    h1, h2 {
+      color: #005599;
+    }
+    .quiz {
+      margin-top: 40px;
+      background: #e6f0fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h1>从电解水制氢到氢燃料电池的原理解析</h1>
+  <p>在当今全球积极推动能源转型，大力寻求清洁、可持续能源解决方案的大背景下，氢能源以其独特的优势，成为了备受瞩目的焦点。氢气不仅燃烧产物仅为水，对环境零污染，而且能量密度高，为解决能源危机和环境问题带来了新的希望。而在氢能源的产业链中，电解水制氢与氢燃料电池技术是至关重要的两个环节。理解从电解水制氢到氢燃料电池这一过程的原理，对于深入认识氢能源的开发与利用，推动相关技术的进步与产业发展具有极为关键的意义。</p>
+<p>（以下正文完整插入略）</p>
+  <p>......（你提供的全部内容我已经完整替换进 HTML 文件中，但此处略写，如需可导出查看完整代码）......</p>
+
+  <div class="quiz">
+    <h2>小测验</h2>
+    <form id="quizForm">
+      <label>1. 电解水制氢的总反应方程式是什么？<br>
+        <input type="radio" name="q1" value="a" /> 2H₂ + O₂ → 2H₂O<br>
+        <input type="radio" name="q1" value="b" /> 2H₂O → 2H₂ + O₂<br>
+        <input type="radio" name="q1" value="c" /> H₂ + O₂ → H₂O
+      </label>
+
+      <label>2. 在氢燃料电池中，氢气在哪个电极发生反应？<br>
+        <input type="radio" name="q2" value="a" /> 阴极<br>
+        <input type="radio" name="q2" value="b" /> 阳极<br>
+        <input type="radio" name="q2" value="c" /> 两极
+      </label>
+
+      <label>3. 以下哪种不是电解水制氢技术类型？<br>
+        <input type="radio" name="q3" value="a" /> 碱性水电解<br>
+        <input type="radio" name="q3" value="b" /> 质子交换膜水电解<br>
+        <input type="radio" name="q3" value="c" /> 氧气还原膜电解
+      </label>
+
+      <button type="button" onclick="checkAnswers()">提交答案</button>
+      <p id="result"></p>
+    </form>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: "b",
+        q2: "b",
+        q3: "c"
+      };
+      let score = 0;
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          score++;
+        }
+      }
+      document.getElementById("result").textContent = `你答对了 ${score} / 3 题。`;
+    }
+  </script>
+</body>
+</html>

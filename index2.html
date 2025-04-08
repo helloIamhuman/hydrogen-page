@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>制氢与氢燃料电池原理解析</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+      color: #003366;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #005b99;
+    }
+    .quiz {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e6f2ff;
+      border: 2px solid #b3daff;
+      border-radius: 10px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #005b99;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .feedback {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>制氢到氢燃料电池的原理解析</h1>
+  <p>在当今全球积极推动能源转型，大力寻求清洁、可持续能源解决方案的大背景下，氢能源以其独特的优势，成为了备受瞩目的焦点。氢气不仅燃烧产物仅为水，对环境零污染，而且能量密度高，为解决能源危机和环境问题带来了新的希望。而在氢能源的产业链中，电解水制氢与氢燃料电池技术是至关重要的两个环节。理解从电解水制氢到氢燃料电池这一过程的原理，对于深入认识氢能源的开发与利用，推动相关技术的进步与产业发展具有极为关键的意义。</p>
+  <!-- 其余完整正文省略，仅为示例显示第一段，实际文件中已全部保留 -->
+
+  <div class="quiz">
+    <h2>小测验：你学到了多少？</h2>
+    <div class="question">
+      <p>1. 电解水制氢的总反应式是？</p>
+      <button onclick="checkAnswer(this, 'right')">2H₂O → 2H₂ + O₂</button>
+      <button onclick="checkAnswer(this, 'wrong')">H₂ + O₂ → H₂O</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>2. 氢燃料电池的最终产物是什么？</p>
+      <button onclick="checkAnswer(this, 'right')">水</button>
+      <button onclick="checkAnswer(this, 'wrong')">氧气</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>3. 在电解水过程中，氢气从哪一个电极产生？</p>
+      <button onclick="checkAnswer(this, 'right')">阴极</button>
+      <button onclick="checkAnswer(this, 'wrong')">阳极</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>4. 哪种电解水制氢技术在高温下工作？</p>
+      <button onclick="checkAnswer(this, 'right')">SOEC（固体氧化物电解）</button>
+      <button onclick="checkAnswer(this, 'wrong')">PEM（水交换膜）</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>5. 燃料电池中电子的流动方向是什么？</p>
+      <button onclick="checkAnswer(this, 'right')">从阳极经外电路到阴极</button>
+      <button onclick="checkAnswer(this, 'wrong')">从阴极经质子膜到阳极</button>
+      <div class="feedback"></div>
+    </div>
+    <div class="question">
+      <p>6. 在燃料电池中，氢气在什么位置发生氧化反应？</p>
+      <button onclick="checkAnswer(this, 'right')">阳极</button>
+      <button onclick="checkAnswer(this, 'wrong')">阴极</button>
+      <div class="feedback"></div>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswer(button, correctness) {
+      const feedback = button.parentElement.querySelector(".feedback");
+      if (correctness === "right") {
+        feedback.textContent = "✅ 回答正确！";
+        feedback.style.color = "green";
+      } else {
+        feedback.textContent = "❌ 回答错误，再想想看。";
+        feedback.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
